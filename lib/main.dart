@@ -15,6 +15,7 @@ final monospaceTextStyle = GoogleFonts.firaCode();
 
 Future<void> main() async {
   await initSupernova(shouldInitializeTimeMachine: false);
+  GoogleFonts.config.allowRuntimeFetching = false;
 
   runApp(const App());
 }
