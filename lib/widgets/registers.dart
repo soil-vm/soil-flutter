@@ -1,5 +1,5 @@
+import 'package:flutter/material.dart';
 import 'package:soil_vm/soil_vm.dart';
-import 'package:supernova_flutter/supernova_flutter.dart';
 
 import '../main.dart';
 

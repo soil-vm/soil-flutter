@@ -1,5 +1,5 @@
+import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
-import 'package:supernova_flutter/supernova_flutter.dart';
 
 import '../vm_state.dart';
 

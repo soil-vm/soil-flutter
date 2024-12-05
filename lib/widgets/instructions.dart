@@ -1,5 +1,7 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:soil_vm/soil_vm.dart';
-import 'package:supernova_flutter/supernova_flutter.dart';
+import 'package:supernova/supernova.dart';
 import 'package:two_dimensional_scrollables/two_dimensional_scrollables.dart';
 
 import '../main.dart';
@@ -18,7 +20,7 @@ class InstructionsWidget extends HookWidget {
   Widget build(BuildContext context) {
     useListenable(state);
 
-    final tableViewKey = useGlobalKey();
+    final tableViewKey = useMemoized(GlobalKey.new);
     final verticalController = useScrollController();
 
     double offsetToY(Word offset) {

@@ -1,7 +1,9 @@
 import 'dart:ui' as ui;
 
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:soil_vm/soil_vm.dart';
-import 'package:supernova_flutter/supernova_flutter.dart' hide Bytes;
+import 'package:supernova/supernova.dart' hide Bytes;
 
 class VMState with ChangeNotifier {
   VMState(SoilBinary binary) : this._(binary, FlutterSyscalls());
